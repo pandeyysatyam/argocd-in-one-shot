@@ -12,7 +12,7 @@ spec:
     path: 04_first_app_deployment/declarative_approach/online_shop
 
   destination:
-    server: https://kubernetes.default.svc
+    server: https://192.168.242.46:33893
     namespace: default
 
   syncPolicy:
