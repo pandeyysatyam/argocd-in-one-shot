@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/pandeyysatyam/argocd-in-one-shot.git
     targetRevision: main
-    path: app_of_apps/apps
+    path: 05_argocd_features/app_of_apps/apps
 
   destination:
     server: https://kubernetes.default.svc
