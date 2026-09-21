@@ -14,5 +14,5 @@ spec:
     namespace: argocd             # Applications (CRDs) must live in argocd namespace
   syncPolicy:
     automated:
-      prune: true                 # Prune removed child apps
+      prune: true                 # Prune removed child app
       selfHeal: true   
