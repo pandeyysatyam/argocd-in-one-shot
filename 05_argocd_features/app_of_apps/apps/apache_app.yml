@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-app                # Root application name
+  name: apache-app               # Root application name
   namespace: argocd             # Always in ArgoCD namespace
 spec:
   project: default              # Can also assign to a Project if needed
