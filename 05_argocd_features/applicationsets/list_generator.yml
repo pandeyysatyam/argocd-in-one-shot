@@ -9,11 +9,11 @@ spec:
     - list:
         elements:
           - app: nginx
-            path: ui_approach/nginx     # path in repo for this app
+            path: 04_first_app_deployment/ui_approach/nginx     # path in repo for this app
           - app: online-shop
-            path: multicluster/online-shop   # path in repo for this app
+            path: 04_first_app_deployment/declarative_approach/online_shop   # path in repo for this app
           - app: chaiapp
-            path: applicationsets/chai-app      # path in repo for this app
+            path: 06_argocd_notifications/chai-app.yaml      # path in repo for this app
   # Template that will be used to generate individual Application CRs
   template:
     metadata:
@@ -22,7 +22,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/<your-username>/argocd-demos.git
+        repoURL: https://github.com/pandeyysatyam/argocd-in-one-shot.git
         targetRevision: main
         path: '{{path}}'                # resolved from element
       destination:
