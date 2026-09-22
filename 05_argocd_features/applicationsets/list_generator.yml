@@ -13,7 +13,7 @@ spec:
           - app: online-shop
             path: 04_first_app_deployment/declarative_approach/online_shop   # path in repo for this app
           - app: chaiapp
-            path: 06_argocd_notifications/chai-app.yaml      # path in repo for this app
+            path: 06_argocd_notifications/      # path in repo for this app
   # Template that will be used to generate individual Application CRs
   template:
     metadata:
